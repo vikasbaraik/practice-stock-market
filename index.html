@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Stock Market Analysis</h1>
+    </div>
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Chart Section -->
+            <div class="chart-section">
+                <div class="time-range">
+                    <button data-range="1mo">1month</button>
+                    <button data-range="3mo">3month</button>
+                    <button data-range="1y">1year</button>
+                    <button data-range="5y">5year</button>
+                </div>
+                <div class="chart-container">
+                    <canvas id="stockChart"></canvas>
+                </div>
+                <div class="peak-values">
+                    <div>Peak Value: <span id="peakValue">--</span></div>
+                    <div>Low Value: <span id="lowValue">--</span></div>
+                </div>
+            </div>
+            <!-- Detail Section -->
+            <div class="detail-section">
+                <h2>Stock Details</h2>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <label>Name:</label>
+                        <span id="stockName">--</span>
+                    </div>
+                    <div class="detail-item">
+                        <label>Book Value:</label>
+                        <span id="bookValue">--</span>
+                    </div>
+                    <div class="detail-item">
+                        <label>Profit:</label>
+                        <span id="profit">--</span>
+                    </div>
+                    <div class="detail-item">
+                        <label>Summary:</label>
+                        <p id="summary">--</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- List Section -->
+        <div class="list-section">
+            <h2>Stock List</h2>
+            <div id="stockList"></div>
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

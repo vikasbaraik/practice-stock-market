@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #212529;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* List Section */
+.list-section {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#stockList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stock-item {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.stock-item:hover {
+    background-color: #e9ecef;
+}
+
+.stock-item.selected {
+    background-color: #e3f2fd;
+    border: 1px solid #2196f3;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Chart Section */
+.chart-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.time-range {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.time-range button {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time-range button:hover {
+    background-color: #e9ecef;
+}
+
+.time-range button.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.chart-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.peak-values {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Detail Section */
+.detail-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detail-grid {
+    margin-top: 15px;
+    display: grid;
+    gap: 15px;
+}
+
+.detail-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: baseline;
+}
+
+.detail-item label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.detail-item p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Utility Classes for Profit Values */
+.profit-positive {
+    color: #198754;  /* Bootstrap-like green */
+    font-weight: 500;
+}
+
+.profit-negative {
+    color: #dc3545;  /* Bootstrap-like red */
+    font-weight: 500;
+}
+
+h2 {
+    color: #212529;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
